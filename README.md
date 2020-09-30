@@ -9,16 +9,15 @@ benefit society.
 ## Project Overview
 - The cancer we're detecting in the images is known as Invasive Ductal Carcinoma (IDC). Makes up ~80% of all breast cancer cases. 
 - Data consisted of 162 slide images (patients) that were cut into 277,524 patches of 50x50 pixels.
-- The images are originally from a 2014 study which you can see [here.](https://engineering.case.edu/centers/ccipd/sites/ccipd.case.edu/files/Automatic_detection_of_invasive_ductal_carcinoma_in_whole.pdf)
+- The images are originally from a 2014 study which you can see [here.](https://github.com/Huntsworth7/Breast-Cancer/blob/master/2014%20Study.pdf)
 - Images were preprocessed and augmented with Keras's built in ImageDataGenerator. 
 - Keras was also used to create the CNN model. 
-- The model ended up yielding an accuracy/F1 score of 87%.
+- The model ended up yielding an accuracy/F1 score of 88%.
  
 ## File List
-**Final Report.pdf:** Written report of the project that condenses much of the information from the jupyter notebooks contains many of
-the visualizations. Additional insights and analysis are in there as well. 
+**[Cancer Final Report.pdf:](https://github.com/Huntsworth7/Breast-Cancer/blob/master/Cancer%20Final%20Report.pdf)** Written report of the project that condenses much of the information from the jupyter notebooks contains many of the visualizations. Additional insights and analysis are in there as well. 
 
-**2014 Study.pdf:** A copy of the initial study that this project is based on. **Note:** I did not contribute to this study. It's merely creating a frame of reference. 
+**[2014 Study.pdf:](https://github.com/Huntsworth7/Breast-Cancer/blob/master/2014%20Study.pdf)** A copy of the initial study that this project is based on. **Note:** I did not contribute to this study. It's merely creating a frame of reference. 
 
 <ins>**Jupyter Notebooks:**</ins><br>
 **0 - [Image Sorting:](https://github.com/Huntsworth7/Breast-Cancer/blob/master/0%20-%20Image%20Sorting.ipynb)** Using scripting to re-sort the images so as to utilize the Keras built in DataImageGenerator.
@@ -65,6 +64,7 @@ EDA was performed but did not yield a lot of insights. Notables included:
 - .4 thresholds seemed to yield the best results in terms of minimizing false negatives (predicting no cancer where cancer is present) without creating too many false positives (predicting cancer where there is none). 
  
 ## Final Thoughts:
--**Not all classification problems are created equally.** F1 score and Accuracy aren't not necessarily the most important metrics depending on what is being prioritized in a given problem. This is especially
-the case when the ramifications of a false negative can be so detrimental to a person's life. 
+-**Not all classification problems are created equally.** F1 score and Accuracy aren't not necessarily the most important metrics depending on what is being prioritized in a given problem. This is especially the case when the ramifications of a false negative can be so detrimental to a person's life. 
+-A deep learning model does not need to be super complex to give good results. 
+-In the future, I'd like to make a more complex model and see how I can improve the results. I would also be curious to see how the model would perform on other data if I could get my hands on it.
  
