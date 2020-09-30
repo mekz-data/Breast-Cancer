@@ -18,19 +18,14 @@ benefit society.
 **Final Report.pdf:** Written report of the project that condenses much of the information from the jupyter notebooks contains many of
 the visualizations. Additional insights and analysis are in there as well. 
 
-**Cancer Slides.ppt**: A presentation of highlights from the final report. 
+**2014 Study.pdf:** A copy of the initial study that this project is based on. **Note:** I did not contribute to this study. It's merely creating a frame of reference. 
 
-<u>**Jupyter Notebooks:**</u>
-**0 - [Image Sorting:](https://github.com/Huntsworth7/Breast-Cancer/blob/master/0%20-%20Image%20Sorting.ipynb)** Using scripting to re-sort the images so as to utilize the Keras
-built in DataImageGenerator.
+<ins>**Jupyter Notebooks:**</ins><br>
+**0 - [Image Sorting:](https://github.com/Huntsworth7/Breast-Cancer/blob/master/0%20-%20Image%20Sorting.ipynb)** Using scripting to re-sort the images so as to utilize the Keras built in DataImageGenerator.
 
-**1 - [EDA:](https://github.com/Huntsworth7/Breast-Cancer/blob/master/1%20-%20EDA.ipynb)** Exploratory Data Analysis of the images.
+**1 - [EDA:](https://github.com/Huntsworth7/Breast-Cancer/blob/master/1%20-%20EDA.ipynb)** Exploratory data analysis of the images.
 
-**2 - [Preprocessing and Modeling:](https://github.com/Huntsworth7/Breast-Cancer/blob/master/2%20-%20Preprocessing%20and%20Modeling.ipynb)** Preprocessing the images to load them into
-our model. Building and evaluating the model along with thoughts on the best
-threshold to determine our target variable. Final thoughts.
-
-**2014 Study.pdf:** A copy of the initial study that this project is based on. 
+**2 - [Preprocessing and Modeling:](https://github.com/Huntsworth7/Breast-Cancer/blob/master/2%20-%20Preprocessing%20and%20Modeling.ipynb)** Preprocessing the images to load them into our model. Building and evaluating the model along with thoughts on the best threshold to determine our target variable. Final thoughts.
 
 ## Code and Resources used:
 - **Python Version:** 3.7
@@ -40,11 +35,11 @@ threshold to determine our target variable. Final thoughts.
  
 ## [Features:](https://github.com/Huntsworth7/Breast-Cancer/blob/master/1%20-%20EDA.ipynb)
 As the dataset was images, features had to be created from scratch. Thankfully, the images were well labeled and a dataframe was created that consisted of:
-- <b>patient_id</b> - the unique patient id number that the image came from. 
-- <b>x</b> - the x coordinate of the image
-- <b>y</b> - the y coordinate of the image 
-- <b>target</b> - our target variable: did the image contain cancer?
-- <b>image</b> - filename of our image.  
+- **patient_id** - the unique patient id number that the image came from. 
+- **x** - the x coordinate of the image
+- **y** - the y coordinate of the image 
+- **target** - our target variable: did the image contain cancer?
+- **image** - filename of our image.  
 
 ## [Image Sorting:](https://github.com/Huntsworth7/Breast-Cancer/blob/master/0%20-%20Image%20Sorting.ipynb)
 - Dataset was originally organized by patient_id and target variable. 
@@ -70,12 +65,6 @@ EDA was performed but did not yield a lot of insights. Notables included:
 - .4 thresholds seemed to yield the best results in terms of minimizing false negatives (predicting no cancer where cancer is present) without creating too many false positives (predicting cancer where there is none). 
  
 ## Final Thoughts:
--<b>Not all classification problems are created equally.</b> F1 score and Accuracy aren't not necessarily the most important metrics depending on what is being prioritized in a given problem. This is especially
+-**Not all classification problems are created equally.** F1 score and Accuracy aren't not necessarily the most important metrics depending on what is being prioritized in a given problem. This is especially
 the case when the ramifications of a false negative can be so detrimental to a person's life. 
-
- 
-
-
- 
- 
  
