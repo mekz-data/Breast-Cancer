@@ -7,12 +7,12 @@ accurately detect cancer in images. It gave me goosebumps about the implications
 benefit society. 
 
 ## Project Overview
+- The model ended up yielding an accuracy/F1 score of 88%.
 - The cancer we're detecting in the images is known as Invasive Ductal Carcinoma (IDC). Makes up ~80% of all breast cancer cases. 
 - Data consisted of 162 slide images (patients) that were cut into 277,524 patches of 50x50 pixels.
 - The images are originally from a 2014 study which you can see [here.](https://github.com/Huntsworth7/Breast-Cancer/blob/master/2014%20Study.pdf)
 - Images were preprocessed and augmented with Keras's built in ImageDataGenerator. 
-- Keras was also used to create the CNN model. 
-- The model ended up yielding an accuracy/F1 score of 88%.
+
  
 ## File List
 **[Cancer Final Report.pdf:](https://github.com/Huntsworth7/Breast-Cancer/blob/master/Cancer%20Final%20Report.pdf)** Written report of the project that condenses much of the information from the jupyter notebooks contains many of the visualizations. Additional insights and analysis are in there as well. 
