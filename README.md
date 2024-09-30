@@ -64,7 +64,7 @@ EDA was performed but did not yield a lot of insights. Notables included:
 - .4 thresholds seemed to yield the best results in terms of minimizing false negatives (predicting no cancer where cancer is present) without creating too many false positives (predicting cancer where there is none). 
  
 ## Final Thoughts:
--**Not all classification problems are created equally.** F1 score and Accuracy aren't not necessarily the most important metrics depending on what is being prioritized in a given problem. This is especially the case when the ramifications of a false negative can be so detrimental to a person's life.     
+- **Not all classification problems are created equally.** F1 score and Accuracy aren't not necessarily the most important metrics depending on what is being prioritized in a given problem. This is especially the case when the ramifications of a false negative can be so detrimental to a person's life.     
 - A deep learning model does not need to be super complex to give good results.     
 - In the future, I'd like to make a more complex model and see how I can improve the results. I would also be curious to see how the model would perform on other data if I could get my hands on it.     
  
